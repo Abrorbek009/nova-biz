@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nova Biz | Creative Control</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient" aria-hidden="true">
+    <div class="orb a"></div>
+    <div class="orb b"></div>
+    <div class="orb c"></div>
+  </div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <div class="wrap">
+    <section class="screen login-screen active" id="loginScreen">
+      <div class="login-shell">
+        <div class="hero">
+          <div class="brand-row">
+            <div class="brand-mark"></div>
+            Nova Biz Creative Control
+          </div>
+          <h1>Biznes emas, sahna boshqariladi.</h1>
+          <p>
+            Bu interfeys oddiy dashboard emas. Bu yerda sotuv, kirim-chiqim, foyda, ishchilar va tezkor amallar
+            futuristik panel ko‘rinishida bir joyga jamlangan. Kirib ko‘ring, vizual energiyasi bilan ajralib turadi.
+          </p>
+          <div class="ticker">
+            <div class="chip">Real-time stats</div>
+            <div class="chip">Animated glass UI</div>
+            <div class="chip">Sales console</div>
+            <div class="chip">Profit radar</div>
+            <div class="chip">Team control</div>
+          </div>
+          <div class="hero-metrics">
+            <div class="metric-card"><strong>Jonli boshqaruv</strong><span>Raqamlar, statuslar va faoliyat bir pasda ko‘rinadi.</span></div>
+            <div class="metric-card"><strong>Tezkor sotuv</strong><span>Bir tugma bilan yangi operatsiya qo‘shiladi.</span></div>
+            <div class="metric-card"><strong>Pulse animatsiya</strong><span>Panelga doimiy “live” hissi beradi.</span></div>
+            <div class="metric-card"><strong>Premium ko‘rinish</strong><span>Glass, glow va motion bilan ko‘zni tortadi.</span></div>
+          </div>
+        </div>
+        <div class="login-panel">
+          <div class="panel-box">
+            <h2>Kirish darvozasi</h2>
+            <p>Demo rejimda login ixtiyoriy, parol esa <b>1234</b>. Kirganingizdan so‘ng barcha bo‘limlar ochiladi.</p>
+            <form id="loginForm">
+              <div class="field">
+                <label for="username">Login</label>
+                <input class="input" id="username" type="text" placeholder="admin" autocomplete="username" />
+              </div>
+              <div class="field">
+                <label for="password">Parol</label>
+                <input class="input" id="password" type="password" placeholder="1234" autocomplete="current-password" />
+              </div>
+              <button class="btn" type="submit">Dashboardga kirish</button>
+              <div class="note">
+                Bu versiya kreatif va interaktiv ko‘rinishda tayyor. Siz xohlasangiz keyin ma’lumotlarni
+                haqiqiy backendga ham ulab berish mumkin.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen app-screen" id="appScreen">
+      <aside class="sidebar">
+        <div>
+          <div class="user-card">
+            <div class="avatar">NB</div>
+            <h3>Nova Biz Admin</h3>
+            <small>Boshqaruv markazi · Toshkent, UZ · live mode</small>
+          </div>
+          <nav class="nav" id="nav">
+            <button class="active" data-tab="dashboard">Dashboard</button>
+            <button data-tab="sales">Sotuv</button>
+            <button data-tab="cashflow">Kirim / Chiqim</button>
+            <button data-tab="profit">Foyda</button>
+            <button data-tab="employees">Ishchilar</button>
+          </nav>
+        </div>
+        <div class="sidebar-footer">
+          <button class="btn btn-ghost" id="logoutBtn" type="button">Chiqish</button>
+          <div style="font-size:0.9rem;line-height:1.5;color:var(--muted)">
+            Oxirgi yangilanish: <span id="today"></span>
+          </div>
+          <div style="font-size:0.88rem;line-height:1.5;color:#dfe8ff">
+            Faol modul: <span id="currentMode" class="chip" style="display:inline-flex;margin-top:6px;">Dashboard</span>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <div>
+            <div class="eyebrow"><span class="pulse"></span> business mission control</div>
+            <h2>Hamma narsa nazorat ostida.</h2>
+            <p>Yuqori darajadagi animatsiya, strategik bloklar va toza vizual oqim.</p>
+          </div>
+          <button class="btn btn-ghost" id="quickSaleBtn" type="button" style="width:auto;padding-inline:18px">Tezkor sotuv +</button>
+        </header>
+
+        <section class="stats">
+          <div class="card stat"><div class="label">Kundalik kirim</div><div class="value" id="incomeStat">0 so'm</div><div class="meta">▲ <span>+12.6%</span> o‘sish</div></div>
+          <div class="card stat"><div class="label">Chiqim</div><div class="value" id="expenseStat">0 so'm</div><div class="meta" style="color:#ffd7a2">▼ <span>−3.4%</span> nazorat</div></div>
+          <div class="card stat"><div class="label">Foyda</div><div class="value" id="profitStat">0 so'm</div><div class="meta">◉ <span>Marja 38%</span> balans</div></div>
+          <div class="card stat"><div class="label">Buyurtmalar</div><div class="value" id="ordersStat">0 ta</div><div class="meta" style="color:#d4caff">↻ <span>real-time</span> yangilanish</div></div>
+        </section>
+
+        <section class="grid2">
+          <div class="card section active" data-section="dashboard">
+            <div class="head"><h3>Sotuv orbitasi</h3><span class="pill">So‘nggi 7 kun</span></div>
+            <div class="chart" id="salesChart"></div>
+          </div>
+          <div class="card section active" data-section="dashboard">
+            <div class="head"><h3>Control Stream</h3><span class="pill">live feed</span></div>
+            <div class="terminal">
+              <div class="line"><div><b>Yangi sotuv tezligi</b><small>Har bir click sahnaga yangi harakat qo‘shadi.</small></div><span class="status ok">On</span></div>
+              <div class="line"><div><b>Kassa monitori</b><small>Kirim va chiqim oqimi balansda turibdi.</small></div><span class="status warn">Watch</span></div>
+              <div class="line"><div><b>Xodim radar</b><small>Jamoa holati va rollari ko‘rinib turadi.</small></div><span class="status ok">Ready</span></div>
+            </div>
+          </div>
+
+          <div class="card section active" data-section="dashboard" style="grid-column: 1 / -1;">
+            <div class="head">
+              <h3>Oylar bo‘yicha real grafik</h3>
+              <span class="pill">monthly sparkline</span>
+            </div>
+            <div id="monthlySpark"></div>
+          </div>
+
+          <div class="card section active" data-section="dashboard">
+            <div class="head">
+              <h3>Top deal’lar</h3>
+              <span class="pill">best performers</span>
+            </div>
+            <div class="terminal" id="topDeals"></div>
+          </div>
+
+          <div class="card section active" data-section="dashboard">
+            <div class="head">
+              <h3>Faollik oqimi</h3>
+              <span class="pill">activity stream</span>
+            </div>
+            <div class="timeline" id="activityFeed"></div>
+          </div>
+        </section>
+
+        <section class="section" data-section="sales">
+          <div class="card">
+            <div class="head"><h3>Sotuv bo‘limi</h3><span class="pill">premium sales console</span></div>
+            <div class="split">
+              <div class="card inner">
+                <h3>Yangi sotuv yaratish</h3>
+                <div class="stack">
+                  <div class="row2">
+                    <input class="input" id="productName" placeholder="Mahsulot nomi" />
+                    <input class="input" id="clientName" placeholder="Mijoz nomi" />
+                  </div>
+                  <div class="row2">
+                    <input class="input" id="qty" type="number" min="1" value="1" placeholder="Soni" />
+                    <input class="input" id="price" type="number" min="0" value="150000" placeholder="Narxi" />
+                  </div>
+                  <button class="btn" id="addSaleBtn" type="button">Sotuvni qo‘shish</button>
+                </div>
+              </div>
+              <div class="card inner">
+                <h3>So‘nggi sotuvlar</h3>
+                <div class="list" id="salesList"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" data-section="cashflow">
+          <div class="card">
+            <div class="head"><h3>Kirim / Chiqim</h3><span class="pill">cashflow matrix</span></div>
+            <div class="split">
+              <div class="card inner">
+                <h3>Pul harakati</h3>
+                <div class="list" id="cashflowList"></div>
+              </div>
+              <div class="card inner">
+                <h3>Tez qo‘shish</h3>
+                <div class="stack">
+                  <input class="input" id="cashTitle" placeholder="Masalan: Xarajat yoki tushum" />
+                  <div class="row2">
+                    <input class="input" id="cashAmount" type="number" value="500000" placeholder="Summa" />
+                    <select class="select" id="cashType">
+                      <option value="income">Kirim</option>
+                      <option value="expense">Chiqim</option>
+                    </select>
+                  </div>
+                  <button class="btn" id="addCashBtn" type="button">Harakat qo‘shish</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" data-section="profit">
+          <div class="card">
+            <div class="head"><h3>Foyda tahlili</h3><span class="pill">profit radar</span></div>
+            <div class="split">
+              <div class="card inner">
+                <h3>Kunlik balans</h3>
+                <div class="list">
+                  <div class="item"><div><strong>Kirim</strong><span id="profitIncomeText">0 so'm</span></div><span class="status ok">+ kirim</span></div>
+                  <div class="item"><div><strong>Chiqim</strong><span id="profitExpenseText">0 so'm</span></div><span class="status bad">- chiqim</span></div>
+                  <div class="item"><div><strong>Sof foyda</strong><span id="netProfitText">0 so'm</span></div><span class="status ok">+ foyda</span></div>
+                </div>
+              </div>
+              <div class="card inner">
+                <h3>Marja struktura</h3>
+                <div class="chart">
+                  <div class="row"><div class="muted">Mahsulot</div><div class="bar"><span style="width:88%"></span></div><div>88%</div></div>
+                  <div class="row"><div class="muted">Xizmat</div><div class="bar"><span style="width:62%;background:linear-gradient(90deg,var(--warn),#ffdca8)"></span></div><div>62%</div></div>
+                  <div class="row"><div class="muted">Qayta sotish</div><div class="bar"><span style="width:74%;background:linear-gradient(90deg,#d09cff,#8db2ff)"></span></div><div>74%</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" data-section="employees">
+          <div class="card">
+            <div class="head"><h3>Ishchilar bo‘limi</h3><span class="pill">team control</span></div>
+            <div class="split">
+              <div class="card inner">
+                <h3>Xodimlar ro‘yxati</h3>
+                <div class="stack" id="employeeList"></div>
+              </div>
+              <div class="card inner">
+                <h3>Yangi xodim qo‘shish</h3>
+                <div class="stack">
+                  <input class="input" id="empName" placeholder="Xodim ismi" />
+                  <div class="row2">
+                    <input class="input" id="empRole" placeholder="Lavozim" />
+                    <select class="select" id="empStatus">
+                      <option value="Faol">Faol</option>
+                      <option value="Band">Band</option>
+                      <option value="Damda">Damda</option>
+                    </select>
+                  </div>
+                  <button class="btn" id="addEmpBtn" type="button">Xodim qo‘shish</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </section>
+  </div>
+
+  <div class="toast" id="toast">
+    <strong id="toastTitle">Xabar</strong>
+    <span id="toastText"></span>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

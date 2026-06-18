@@ -1,0 +1,293 @@
+{
+  "auth": {
+    "loggedIn": true
+  },
+  "sales": [
+    {
+      "product": "Tezkor buyurtma",
+      "client": "Walk-in",
+      "qty": 1,
+      "amount": 840396
+    },
+    {
+      "product": "Tezkor buyurtma",
+      "client": "Walk-in",
+      "qty": 1,
+      "amount": 1340302
+    },
+    {
+      "product": "Tezkor buyurtma",
+      "client": "Walk-in",
+      "qty": 1,
+      "amount": 1647537
+    },
+    {
+      "product": "Tezkor buyurtma",
+      "client": "Walk-in",
+      "qty": 1,
+      "amount": 1613154
+    },
+    {
+      "product": "Tezkor buyurtma",
+      "client": "Walk-in",
+      "qty": 1,
+      "amount": 759915
+    },
+    {
+      "product": "Tezkor buyurtma",
+      "client": "Walk-in",
+      "qty": 1,
+      "amount": 1330947
+    },
+    {
+      "product": "Tezkor buyurtma",
+      "client": "Walk-in",
+      "qty": 1,
+      "amount": 1345184
+    },
+    {
+      "product": "Tezkor buyurtma",
+      "client": "Walk-in",
+      "qty": 1,
+      "amount": 1059076
+    },
+    {
+      "product": "Tezkor buyurtma",
+      "client": "Walk-in",
+      "qty": 1,
+      "amount": 586691
+    },
+    {
+      "product": "Tezkor buyurtma",
+      "client": "Walk-in",
+      "qty": 1,
+      "amount": 1057804
+    },
+    {
+      "product": "Smartfon",
+      "client": "Anvar",
+      "qty": 2,
+      "amount": 3200000
+    },
+    {
+      "product": "Noutbuk",
+      "client": "Dilorom",
+      "qty": 1,
+      "amount": 5900000
+    },
+    {
+      "product": "Aksessuar",
+      "client": "Aziz",
+      "qty": 5,
+      "amount": 750000
+    },
+    {
+      "product": "Printer",
+      "client": "Gulnoza",
+      "qty": 1,
+      "amount": 2800000
+    },
+    {
+      "product": "Planshet",
+      "client": "Sardor",
+      "qty": 3,
+      "amount": 3900000
+    }
+  ],
+  "cashflow": [
+    {
+      "title": "Tezkor sotuv",
+      "amount": 840396,
+      "type": "income"
+    },
+    {
+      "title": "Tezkor sotuv",
+      "amount": 1340302,
+      "type": "income"
+    },
+    {
+      "title": "Tezkor sotuv",
+      "amount": 1647537,
+      "type": "income"
+    },
+    {
+      "title": "Tezkor sotuv",
+      "amount": 1613154,
+      "type": "income"
+    },
+    {
+      "title": "Tezkor sotuv",
+      "amount": 759915,
+      "type": "income"
+    },
+    {
+      "title": "Tezkor sotuv",
+      "amount": 1330947,
+      "type": "income"
+    },
+    {
+      "title": "Tezkor sotuv",
+      "amount": 1345184,
+      "type": "income"
+    },
+    {
+      "title": "Tezkor sotuv",
+      "amount": 1059076,
+      "type": "income"
+    },
+    {
+      "title": "Tezkor sotuv",
+      "amount": 586691,
+      "type": "income"
+    },
+    {
+      "title": "Tezkor sotuv",
+      "amount": 1057804,
+      "type": "income"
+    },
+    {
+      "title": "Bugungi tushum",
+      "amount": 1800000,
+      "type": "income"
+    },
+    {
+      "title": "Reklama xarajati",
+      "amount": 240000,
+      "type": "expense"
+    },
+    {
+      "title": "Yetkazib berish",
+      "amount": 130000,
+      "type": "expense"
+    },
+    {
+      "title": "Qo'shimcha kirim",
+      "amount": 1065000,
+      "type": "income"
+    },
+    {
+      "title": "Ofis ijarasi",
+      "amount": 1500000,
+      "type": "expense"
+    }
+  ],
+  "employees": [
+    {
+      "name": "Yangi xodim",
+      "role": "Lavozim",
+      "status": "Faol"
+    },
+    {
+      "name": "Yangi xodim",
+      "role": "Lavozim",
+      "status": "Faol"
+    },
+    {
+      "name": "Dilshod Karimov",
+      "role": "Sotuv menejeri",
+      "status": "Faol"
+    },
+    {
+      "name": "Madina Akromova",
+      "role": "Kassir",
+      "status": "Band"
+    },
+    {
+      "name": "Javlonbek Ergashev",
+      "role": "Omborchi",
+      "status": "Damda"
+    }
+  ],
+  "dashboard": {
+    "weekly": [
+      {
+        "label": "Yak",
+        "value": 100
+      },
+      {
+        "label": "Yak",
+        "value": 100
+      },
+      {
+        "label": "Yak",
+        "value": 100
+      },
+      {
+        "label": "Yak",
+        "value": 100
+      },
+      {
+        "label": "Yak",
+        "value": 100
+      },
+      {
+        "label": "Yak",
+        "value": 100
+      },
+      {
+        "label": "Yak",
+        "value": 100
+      }
+    ],
+    "monthly": [
+      {
+        "label": "Iyun",
+        "value": 91
+      },
+      {
+        "label": "Iyun",
+        "value": 91
+      },
+      {
+        "label": "Iyun",
+        "value": 91
+      },
+      {
+        "label": "Iyun",
+        "value": 91
+      },
+      {
+        "label": "Iyun",
+        "value": 91
+      },
+      {
+        "label": "Iyun",
+        "value": 91
+      }
+    ],
+    "activity": [
+      {
+        "title": "Tezkor sotuv kiritildi · 840 396 so'm",
+        "time": "Bugun · 09:18"
+      },
+      {
+        "title": "Tezkor sotuv kiritildi · 1 340 302 so'm",
+        "time": "Bugun · 09:18"
+      },
+      {
+        "title": "Tezkor sotuv kiritildi · 1 647 537 so'm",
+        "time": "Bugun · 09:18"
+      },
+      {
+        "title": "Tezkor sotuv kiritildi · 1 613 154 so'm",
+        "time": "Bugun · 09:18"
+      },
+      {
+        "title": "Tezkor sotuv kiritildi · 759 915 so'm",
+        "time": "Bugun · 09:18"
+      },
+      {
+        "title": "Tezkor sotuv kiritildi · 1 330 947 so'm",
+        "time": "Bugun · 09:18"
+      },
+      {
+        "title": "Tezkor sotuv kiritildi · 1 345 184 so'm",
+        "time": "Bugun · 09:18"
+      },
+      {
+        "title": "Tezkor sotuv kiritildi · 1 059 076 so'm",
+        "time": "Bugun · 09:18"
+      }
+    ]
+  }
+}
