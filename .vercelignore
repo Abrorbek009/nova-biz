@@ -5,3 +5,7 @@ node_modules
 npm-debug.log
 .DS_Store
 .vercel
+server.js
+open-chrome.bat
+data.json
+
