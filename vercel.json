@@ -4,8 +4,6 @@
     { "src": "api/index.js", "use": "@vercel/node" }
   ],
   "routes": [
-    { "src": "/api/(.*)", "dest": "/api/index.js" },
-    { "src": "/public/(.*)", "dest": "/public/$1" },
     { "src": "/(index\\.html|.*\\.js|.*\\.css|.*\\.json|.*\\.ico|.*\\.svg)", "dest": "/public/$1" },
     { "src": "/(.*)", "dest": "/public/index.html" }
   ]
