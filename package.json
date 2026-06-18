@@ -4,7 +4,8 @@
   "description": "Simple local business dashboard app",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "[my-framework] build --output public"
   },
   "dependencies": {
     "dotenv": "^16.4.1",
